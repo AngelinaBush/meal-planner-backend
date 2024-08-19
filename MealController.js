@@ -1,5 +1,4 @@
-const MealModel = require('./MealModel') //соединяем модель и контроллер
-
+const MealModel = require('./MealModel') 
 
 
 module.exports.getMeal = async (req, res) => {
