@@ -1,11 +1,11 @@
 const { Router } = require('express');
 const {getMeal, saveMeals, deleteMeal, editMeal} = require('./MealController')
 
-const router = Router(); //дороги/маршруты нашего приложения
+const router = Router();
 
-router.get('/', getMeal)  //getMeal из MealController
+router.get('/', getMeal)  
 
-router.post('/saveMeals', saveMeals)  //поменять название, сохранить и обновить в соответствии в введеными данными
+router.post('/saveMeals', saveMeals)  
 
 router.post('/deleteMeal', deleteMeal)
 
