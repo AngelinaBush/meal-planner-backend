@@ -2,8 +2,6 @@ const MealModel = require('./MealModel') //соединяем модель и к
 
 
 
-//получаем доступ к тому, что мы пишем
-
 module.exports.getMeal = async (req, res) => {
     const myMeal = await MealModel.find();
     res.send(myMeal)
