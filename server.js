@@ -13,7 +13,10 @@ app.use(express.json())
 app.use(cors())
 
 mongoose  
-.connect(process.env.MONGODB_LINK)
+.connect(process.env.MONGODB_LINK, {
+  serverSelectionTimeoutMS: 30000,
+  socketTimeoutMS: 45000, 
+})
 .then(() => console.log('WE WERE CONNECTED TO MONGO'))
 .catch((err) => console.log(err))  
 
