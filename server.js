@@ -27,4 +27,3 @@ app.listen(PORT, () => {
 })
 
 
-//mongodb+srv://asbushuevaa:<password>@cluster0.bwbp3f5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
